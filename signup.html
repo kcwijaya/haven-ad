@@ -31,10 +31,11 @@
         </div>
 
         <div id="form-details">
-             <form class="email form-inline">
+             <form class="email form-inline" method="POST" enctype="application/json" action="/sign-up" target="uploader_iframe">
                 <label style="color: #6B6F6F; font-family: 'Raleway', sans-serif;" for="exampleInputEmail1">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <button type="submit" class="haven-button btn btn-default"> Submit </button>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="submit" name="submit" type="submit" value="Send" class="haven-button btn btn-default">  </input>
+                 <iframe id="uploader_iframe" name="uploader_iframe" style="display: none;"></iframe>
            </form>
        </div>
 
