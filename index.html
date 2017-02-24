@@ -1,42 +1,408 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Haven - Home</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haven - Home Page</title>
+    <meta name="description" content="Your Description Here">
+    <meta name="keywords" content="free boostrap, bootstrap template, freebies, free theme, free website, free portfolio theme, portfolio, personal, cv">
+    <meta name="author" content="Jenn, ThemeForces.com">
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../main.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-    </head>
-    <body>
-        <div id="header">
-            <img id="logo" src="../images/logo.png">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
 
-            <div id="nav">
-                <a class="link" href="../index.html"> Home </a> |
-                <a class="link" href="../signup.html"> Sign Up </a> |
-                <a class="link" href="../invite.html"> Share </a> 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+    document.getElementById('shareBtn').onclick = function() {
+      FB.ui({
+        method: 'share',
+        display: 'popup',
+        href: 'https://developers.facebook.com/docs/',
+      }, function(response){});
+    }
+    </script>
+
+    <!-- Off Canvas Navigation
+    ================================================== -->
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas"> <!--- Off Canvas Side Menu -->
+        <div class="close" data-toggle="offcanvas" data-target=".navmenu">
+            <span class="fa fa-close"></span>
+        </div>
+        <div class="add-margin"></div>
+        <ul class="nav navmenu-nav"> <!--- Menu -->
+            <li><a href="#home" class="page-scroll">Home</a></li>
+            <li><a href="#meet-us" class="page-scroll">Overview</a></li>
+            <li><a href="#services" class="page-scroll">Features</a></li>
+            <li><a href="#works" class="page-scroll">Sign Up</a></li>
+            <li><a href="#share" class="page-scroll">Share </a></li>
+            <li><a href="#about-us" class="page-scroll">Our Team</a></li>
+             <li><a href="#contact" class="page-scroll">Contact Us</a></li>
+
+        </ul><!--- End Menu -->
+    </div> <!--- End Off Canvas Side Menu -->
+
+    <!-- Home Section -->
+    <div id="home">
+        <div class="container text-center">
+            <!-- Navigation -->
+            <nav id="menu" data-toggle="offcanvas" data-target=".navmenu">
+                <span class="fa fa-bars"></span>
+            </nav>
+
+            <div class="content">
+                <h4>Find a safe haven in your community.</h4>
+                <hr>
+                <div class="header-text btn">
+                    <h1><span id="head-title"></span></h1>
+                </div>
             </div>
 
-            <div id="header-content">
-                <h2 class="emphasis"> Find a safe haven in your community.</h2>
-                <p class="subtitle"> Haven is a soon to be launched mobile application geared towards coordinating efforts to help communities recover after emergencies and natural disasters. It will change the landscape of crisis management on the global scale. We welcome you to join us in this effort. </p>
-            </div>  
+            <a href="#meet-us" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+            </a>
+        </div>
+    </div>
 
-            <img class="graphic" src="../images/polaroid-victim.png">
+    <!-- Meet Us Section -->
+    <div id="meet-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>About Us</h2>
+                        <hr>
+                    </div>
+                    <p>Haven is a soon to be launched mobile application geared towards coordinating efforts to help communities recover after emergencies and natural disasters. It works as a platform that connects organizations, victims, bystanders, and members of the community to unite in this shared goal. With its intuitive interface and tageted features, it will change the landscape of crisis management on the global scape. <br><b> We welcome you to join us in this effort. </b></p>
+                    <a href="#services" class="down-btn page-scroll">
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview Video Section -->
+    <div id="overview-video">
+        <div class="overlay">
+            <div class="container">
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Features</h2>
+                        <hr>
+                    </div>
+                    <p>Haven aims to coordinate volunteer efforts and to rally communities to help their neighbors in recovery efforts. To do this effectively, Haven offers a variety of features.  </p>
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <span class="fa fa-list fa-3x"></span>
+                        <h4>Task Deployment and Announcements </h4>
+                        <p>Relief organizations, government agencies, victims, and members of the community can list and describe either tasks that need to be completed or general announcements. These can range from the work that needs to be done after relief organizations are instructed to leave the region; victims that need assistance in finding food or shelter; to families or companies that are organizing stations to distribute resources. Task completion progress and help station conditions are carefully tracked to ensure that there are no stale information or miscommunication. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <span class="fa fa-user fa-3x"></span>
+                        <h4>User Profiles and Verification</h4>
+                        <p>In order to ensure that you only see the tasks and notes pertinent to you, user profiles are used to track what jobs would best suit your skills and what notes or announcements address your needs. Through Haven, you can precisely track the impact you have made in your community and how your community has helped you. User verification ensures that tasks and announcements that appear on Haven can and should be followed. <br><br><br><br><br></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="service">
+                        <span class="fa fa-globe fa-3x"></span>
+                        <h4>Geospatial Capabilities</h4>
+                        <p>Haven not only allows neighbors and communities to work together to recover after a disaster, but also prepares communities for future ones. By analyzing hot spots, movements, and resource needs, Haven can be a significant asset in future crisis preparedness.   <br><br><br><br><br><br> <br><br><br><br></p>
+                    </div>
+                </div>
+            </div>
+            <a href="#works" class="down-btn page-scroll">
+                <span class="fa fa-angle-down"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="cta">
+        <div class="container text-center">
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="works">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Sign up</h2>
+                        <hr>
+                    </div>
+                    <p>For early updates on Haven, including its launch date, progress, and potential features, please like the following Facebook page. </p>
+
+                <div class="fb-page" data-href="https://www.facebook.com/Team-Haven-343788122689413/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Team-Haven-343788122689413/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Team-Haven-343788122689413/">Team Haven</a></blockquote></div>
+
+                </div>
+            </div>
+            <div class="space"></div>
         </div>
 
-        <div id="actions">
-            <a id="sign-up" href="../signup.html" type="button" class="haven-button btn btn-default "> Sign Up </a>
-            <a id="send-friend" href="../invite.html" type="button" class="haven-button btn btn-default "> Invite Friends </a>
+    <div id="cta">
+        <div class="container text-center">
         </div>
+    </div>
+    
 
-        <div id="footer">
-            <p class="copyright"> &copy; Haven Copyright 2017 </p>
+    <div class="container-fluid">
+    <div id="share" class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Save your community with your friends. </h2>
+                        <hr>
+                    </div>
+                    <p>At any given time, there is someone in need. We can help solve this problem. The more people working to do so, the faster we can make the world a better place. Please help us spread this message by either sharing our page on Facebook or sending an email. <br><br>
+
+                    <a id="send-friend" target="_top" href="mailto:?subject=Join me in helping our community with Haven!&body=Hey, %0D%0A%0D%0A Check out this soon to be released mobile application named Haven  that is geared towards helping communities rebuild and recover after natural disasters and emergencies.%0D%0A%0D%0A Learn more here: http://teamhaven.herokuapp.com %0D%0A%0D%0A Cheers! %0D%0A -- %0D%0A" type="button" class="haven-button btn btn-default "> Send an Email</a></p>
+
+                <div id="shareBtn" class="btn btn-default clearfix">Share on Facebook</div>
+
+                </div>
+            </div>
+            <div class="space"></div>
+    </div>
+
+
+    <!-- Clients Section -->
+    <div id="clients">
+        <div class="overlay">
+            <div class="container text-center">
+                <div class="section-title">
+                    <h2>Our Partners</h2>
+                    <hr>
+                </div>
+
+                <ul class="clients">
+                    <li><a href="#"><img src="img/stanford.png" class="img-responsive" alt="..." ></a></li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>About Us</h2>
+                        <hr>
+                    </div>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-12 col-sm-10">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <div class="team">
+                                <img src="img/team/01.jpg" class="img-responsive img-circle"  alt="...">
+                                <br>
+                                <h4>Kimberly Wijaya</h4>
+                                <p class="small">Stanford University</p>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="team">
+                                <img src="img/team/02.jpg" class="img-responsive img-circle"alt="...">
+                                <br>
+                                <h4>Priya Ganesan</h4>
+                                <p class="small">Stanford University</p>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="team">
+                                <img src="img/team/03.jpg" class="img-responsive img-circle"  alt="...">
+                                <br>
+                                <h4>Cheenar Banerjee</h4>
+                                <p class="small">Stanford University</p>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="team">
+                                <img src="img/team/04.jpg" class="img-responsive img-circle" alt="...">
+                                <br>
+                                <h4>Patricia Perozo</h4>
+                                <p class="small">Stanford University</p>
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#contact" class="page-scroll down-btn">
+                    <span class="fa fa-angle-down"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- Testimonial Section -->
+   
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <div class="space"></div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <address>
+                        <strong>Address</strong><br>
+                        <br>
+                        Team Haven<br>
+                        558 Mayfield Ave<br>
+                        Stanford, CA 94305<br>
+                        Phone: (650) 490-0437
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/TeamHavenApp/"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://plus.google.com/u/4/110910020567841367646"><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="https://twitter.com/TeamHavenApp"><span class="fa fa-twitter"></span></a></li>
+                          </ul>
+                    </address>
+                </div>
+
+                <div class="col-md-9">
+                    <form autocomplete="off">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="Phone No.">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        <div class="text-right">
+                            <a href="#" class="btn send-btn">Send</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="footer">
+        <div class="container">
+             <div class="pull-left">
+                <p>2014 © Arcadia. All Rights Reserved. Coded by <a href="https://dribbble.com/jennpereira">Jenn</a> & Designed by <a href="https://dribbble.com/alanpodemski">Alan</a></p>
+            </div>
+            <div class="pull-right"> 
+                <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+      $(function(){
+          $("#head-title").typed({
+            strings: ["We save communities.^1000", "We connect victims with resources.^1000" ,"Creating a safe haven for all.^1000", "Contribute to recovery efforts.^1000", "Help save a family.^1000" ,"Prepare for any disaster.^1000", "Let's save the world.^1000"],
+            typeSpeed: 100,
+            loop: true,
+            startDelay: 100
+          });
+      });
+    </script>
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
 </html>

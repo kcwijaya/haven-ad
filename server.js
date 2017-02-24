@@ -10,6 +10,25 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
+app.get('/img/*', function(req, res){
+  res.sendFile(__dirname + req.url);
+});
+
+app.get('/font-awesome-4.2.0/*', function(req, res){
+  res.sendFile(__dirname+req.url);
+});
+
+app.get('/fonts/*', function(req, res){
+  res.sendFile(__dirname + req.url);
+});
+
+app.get('/js/*', function(req, res){
+  res.sendFile(__dirname + req.url);
+});
+
+app.get('/css/*', function(req, res){
+  res.sendFile(__dirname + req.url);
+});
 
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
