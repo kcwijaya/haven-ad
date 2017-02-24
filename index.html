@@ -51,22 +51,39 @@
   <body>
 
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
+    <script>
+
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '777583755751911',
+      xfbml      : true,
+      version    : 'v0.1'
+    });
+    FB.AppEvents.logPageView();
+  };
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=777583755751911";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+    (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
 
-    <script>
-    document.getElementById('shareBtn').onclick = function() {
-      FB.ui({
+          FB.ui({
         method: 'share',
         display: 'popup',
         href: 'https://developers.facebook.com/docs/',
       }, function(response){});
-    }
+    
     </script>
 
     <!-- Off Canvas Navigation
@@ -224,8 +241,7 @@
 
                     <a id="send-friend" target="_top" href="mailto:?subject=Join me in helping our community with Haven!&body=Hey, %0D%0A%0D%0A Check out this soon to be released mobile application named Haven  that is geared towards helping communities rebuild and recover after natural disasters and emergencies.%0D%0A%0D%0A Learn more here: http://teamhaven.herokuapp.com %0D%0A%0D%0A Cheers! %0D%0A -- %0D%0A" type="button" class="haven-button btn btn-default "> Send an Email</a></p>
 
-                <div id="shareBtn" class="btn btn-default clearfix">Share on Facebook</div>
-
+<div class="btn btn-default fb-share-button" data-href="https://www.facebook.com/Team-Haven-343788122689413/" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FTeam-Haven-343788122689413%2F&amp;src=sdkpreparse">Share on Facebook</a></div>
                 </div>
             </div>
             <div class="space"></div>
