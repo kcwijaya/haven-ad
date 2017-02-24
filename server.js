@@ -50,7 +50,7 @@ app.post('/sign-up', function(req, res){
   console.log("omg");
   console.log(req.body);
   var email = req.body.email;
-  fs.appendFile('emails.txt', email +"\r\n", (err)=>{
+  fs.writeFile(email + '.txt', email +"\r\n", (err)=>{
     if (err)
     {
       console.log(err);
