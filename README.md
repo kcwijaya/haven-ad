@@ -3,10 +3,13 @@
 This repository holds the frontend the server code for our website. It serves as the visual aid for our ad platform. It allows us to track when users either share our application through Email
 or thorugh Facebook. 
 
-** The website is hosted here: ** https://www.teamhaven.herokuapp.com
-** Our Facebook is here: ** https://www.facebook.com/havenmobile
-** Our Twitter is here: ** https://twitter.com/TeamHavenApp
-** Our Google+ is here: ** https://plus.google.com/u/4/110910020567841367646
+**The website is hosted here:** https://www.teamhaven.herokuapp.com
+
+**Our Facebook is here:** https://www.facebook.com/havenmobile
+
+**Our Twitter is here:** https://twitter.com/TeamHavenApp
+
+**Our Google+ is here:** https://plus.google.com/u/4/110910020567841367646
 
 Our website is divided into a number of sections:
 
@@ -22,7 +25,7 @@ Also allows users to like or share on facebook. Clicks to these are monitored by
 
 This area discusses three of the features of our application:
 
-** Task Deployment and Announcements ** 
+**Task Deployment and Announcements** 
 
 Relief organizations, government agencies, victims, and members of the community can list and describe either tasks that need to be completed or general announcements. These can range from the work that needs to be done after relief organizations are instructed to leave the region; victims that need assistance in finding food or shelter; to families or companies that are organizing stations to distribute resources. Task completion progress and help station conditions are carefully tracked to ensure that there are no stale information or miscommunication.
 
