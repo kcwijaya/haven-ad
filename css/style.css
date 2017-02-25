@@ -52,12 +52,12 @@ p{
 }
 hr{
 	width: 50px;
-	border-color: #c59a6d;
+	border-color: #33cccc;
 }
 a {color: #222222}
 a:hover,
 a:focus{
-	color: #c59a6d;
+	color: #33cccc;
 	text-decoration: none;
 }
 #home{
@@ -73,7 +73,7 @@ a:focus{
 }
 #home a.down-btn span.fa.fa-angle-down {
 	font-size: 26px;
-	border: 1px solid #c59a6d;
+	border: 1px solid #33cccc;
 	border-radius: 2px;
 	padding: 7px 5px;
 	position: relative;
@@ -85,7 +85,7 @@ a:focus{
 	padding-top: 16%;
 }
 .header-text.btn{
-	border: 1px solid #ffffff;
+	border: 1px solid #33cccc;
 	border-radius: 0;
 	padding: 10px 30px;
 	height: 100px;
@@ -166,7 +166,7 @@ z-index: 10;
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, 
 .navmenu-default .navmenu-nav>li>a:focus, 
 .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
-color: #C59A6D;
+color: #33cccc;
 background-color: transparent;
 }
 .nav > li {
@@ -182,7 +182,7 @@ font-size: 12px;
 line-height: 30px;
 }
 nav#menu span.fa.fa-bars:hover {
-color: #C59A6D;
+color: #33cccc;
 }
 .navmenu-default .navmenu-nav>.active>a, 
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a, 
@@ -190,12 +190,12 @@ color: #C59A6D;
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a:hover, 
 .navmenu-default .navmenu-nav>.active>a:focus, 
 .navbar-default .navbar-offcanvas .navmenu-nav>.active>a:focus {
-color: #C59A6D;
+color: #33cccc;
 background-color: transparent;
 }
 
 .close:hover{
-	background: #c59a6d;
+	background: #33cccc;
 	color: #ffffff;
 	opacity: 1;
 }
@@ -218,12 +218,12 @@ background-color: transparent;
 
 a.down-btn span.fa.fa-angle-down {
 	font-size: 26px;
-	border: 1px solid #c59a6d;
+	border: 1px solid #33cccc;
 	border-radius: 2px;
 	padding: 7px 5px;
 	position: relative;
 	cursor: pointer;
-	color: #c59a6d;
+	color: #33cccc;
 	margin-top: 30px;
 }
 
@@ -260,7 +260,7 @@ a.down-btn span.fa.fa-angle-down {
 }
 .service:hover>h4,
 .service:hover>span.fa{
-	color: #c59a6d;
+	color: #33cccc;
 }
 .service:hover{
 	border-color: #c59a6d;
@@ -377,8 +377,8 @@ a.btn.read-more-btn:hover{
 
 a.btn.send-btn{
 	text-transform: uppercase;
-	background: #c59a6d;
-	color: #282f35;
+	background: #33cccc;
+	color: #33cccc;
 	padding: 15px 35px;
 	border-radius: 0;
 	font-size: 12px;
@@ -387,7 +387,7 @@ a.btn.send-btn{
 }
 a.btn.send-btn:hover{
 	background: transparent;
-	border: 1px solid #c59a6d;
+	border: 1px solid #33cccc;
 	color: #ffffff;
 }
 
@@ -432,7 +432,7 @@ ul.clients li{
 .team:hover.hire,
 .team.hire{
 	height: 340px;
-	border-color: #c59a6d;
+	border-color: #33cccc;
 	color: #c59a6d;
 	opacity: 1;
 }
@@ -442,11 +442,11 @@ ul.clients li{
 }
 .team hr{
 	border-width: 2px;
-	border-color: #dcc2a7;
+	border-color: #33cccc;
 }
 .team:hover{
 	opacity: 1;
-	border: 1px solid #222;
+	border: 1px solid #33cccc;
 }
 .team img {
 	width: 80px;
@@ -513,7 +513,7 @@ address:before{
   	text-rendering: auto;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
-  	color: #c59a6d;
+  	color: #33cccc;
   	vertical-align: middle;
   	margin-right: 15px;
   	margin-left: -30px;
@@ -552,7 +552,7 @@ margin-bottom: 30px;
 }
 
 #contact .form-control:focus {
-	border-color: #C59A6D;
+	border-color: #33cccc;
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -590,10 +590,10 @@ nav#footer{
 	background: #282f35;
 	padding: 40px 0;
 	color: #ffffff;
-	border-bottom: 5px solid #c59a6d;
+	border-bottom: 5px solid #33cccc;
 }
 #footer span.fa{
-	color: #c59a6d;
+	color: #33cccc;
 	font-size: 26px;
 	margin-left: 10px;
 }
@@ -601,4 +601,4 @@ nav#footer{
 	color: #ffffff;
 }
 #footer a:hover{
-	color: #c59a6d;}
+	color: #33cccc;}

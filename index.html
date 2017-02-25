@@ -11,6 +11,53 @@
     <meta name="keywords" content="free boostrap, bootstrap template, freebies, free theme, free website, free portfolio theme, portfolio, personal, cv">
     <meta name="author" content="Jenn, ThemeForces.com">
     
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92609430-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <!-- Facebook Pixel Code -->
+
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+n.queue=[];t=b.createElement(e);t.async=!0;
+
+t.src=v;s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+
+'https://connect.facebook.net/en_US/fbevents.js');
+
+
+fbq('init', '1257816767629646'); 
+
+fbq('track', 'PageView');
+
+</script>
+
+<noscript>
+
+<img height="1" width="1" src="https://www.facebook.com/tr?id=1257816767629646&ev=PageView&noscript=1"/>
+
+</noscript>
+
+<!-- End Facebook Pixel Code -->
+
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -71,8 +118,23 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=418924248440046";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
-          FB.ui({
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=418924248440046";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+      FB.ui({
         method: 'share',
         display: 'popup',
         href: 'https://developers.facebook.com/docs/',
@@ -131,7 +193,17 @@
                         <h2>About Us</h2>
                         <hr>
                     </div>
+                    <img src="img/logo.png" style="width: 50%; height: 50%;"> 
+
                     <p>Haven is a soon to be launched mobile application geared towards coordinating efforts to help communities recover after emergencies and natural disasters. It works as a platform that connects organizations, victims, bystanders, and members of the community to unite in this shared goal. With its intuitive interface and tageted features, it will change the landscape of crisis management on the global scape. <br><b> We welcome you to join us in this effort. </b></p>
+
+
+                    <br><br>
+                    <div class="fb-like" onClick="fbq('track', 'Like on Facebook');" data-href="https://www.facebook.com/havenmobile/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+
+                    <div onClick="fbq('track', 'Share on Facebook');" class="fb-share-button" data-href="https://www.facebook.com/havenmobile/" data-layout="box_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fhavenmobile%2F&amp;src=sdkpreparse">Share</a></div>
+
+                    <br> <br>
                     <a href="#services" class="down-btn page-scroll">
                         <span class="fa fa-angle-down"></span>
                     </a>
@@ -211,7 +283,7 @@
                     </div>
                     <p>For early updates on Haven, including its launch date, progress, and potential features, please like the following Facebook page. </p>
 
-<div class="fb-page" data-href="https://www.facebook.com/havenmobile/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/havenmobile/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/havenmobile/">Haven Mobile</a></blockquote></div>
+<div class="fb-page" onClick="fbq('track', 'Like on Facebook');" data-href="https://www.facebook.com/havenmobile/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/havenmobile/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/havenmobile/">Haven Mobile</a></blockquote></div>
 
                 </div>
             </div>
@@ -234,9 +306,9 @@
                     </div>
                     <p>At any given time, there is someone in need. We can help solve this problem. The more people working to do so, the faster we can make the world a better place. Please help us spread this message by either sharing our page on Facebook or sending an email. <br><br>
 
-                    <a id="send-friend" target="_top" href="mailto:?subject=Join me in helping our community with Haven!&body=Hey, %0D%0A%0D%0A Check out this soon to be released mobile application named Haven  that is geared towards helping communities rebuild and recover after natural disasters and emergencies.%0D%0A%0D%0A Learn more here: http://teamhaven.herokuapp.com %0D%0A%0D%0A Cheers! %0D%0A -- %0D%0A" type="button" class="haven-button btn btn-default "> Send an Email</a></p>
+                    <a id="send-friend" onClick="fbq('track', 'Send Email');" target="_top" href="mailto:?subject=Join me in helping our community with Haven!&body=Hey, %0D%0A%0D%0A Check out this soon to be released mobile application named Haven  that is geared towards helping communities rebuild and recover after natural disasters and emergencies.%0D%0A%0D%0A Learn more here: http://teamhaven.herokuapp.com %0D%0A%0D%0A Cheers! %0D%0A -- %0D%0A" type="button" class="haven-button btn btn-default "> Send an Email</a></p>
 
-<div class="btn btn-default fb-share-button" data-href="https://www.facebook.com/Team-Haven-343788122689413/" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FTeam-Haven-343788122689413%2F&amp;src=sdkpreparse">Share on Facebook</a></div>
+<div class="btn btn-default fb-share-button" onClick="fbq('track', 'Share on Facebook');" data-href="https://www.facebook.com/Team-Haven-343788122689413/" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FTeam-Haven-343788122689413%2F&amp;src=sdkpreparse">Share on Facebook</a></div>
                 </div>
             </div>
             <div class="space"></div>
@@ -253,7 +325,9 @@
                 </div>
 
                 <ul class="clients">
-                    <li><a href="#"><img src="img/stanford.png" class="img-responsive" alt="..." ></a></li>
+ <li><a href="#">
+                    <li><a href="#"><img src="img/stanford.png" class="img-responsive" alt="..."></a></li>
+                    <li><a href="#"><img src="img/oracle.png" class="img-responsive" alt="..."></a></li>
                 </ul>
             </div>
         </div>
@@ -349,32 +423,16 @@
                         Stanford, CA 94305<br>
                         Phone: (650) 490-0437
                         <ul class="social">
-                            <li><a href="https://www.facebook.com/TeamHavenApp/"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.facebook.com/HavenMobile/"><span class="fa fa-facebook"></span></a></li>
                             <li><a href="https://plus.google.com/u/4/110910020567841367646"><span class="fa fa-google-plus"></span></a></li>
                             <li><a href="https://twitter.com/TeamHavenApp"><span class="fa fa-twitter"></span></a></li>
                           </ul>
                     </address>
                 </div>
-
-                <div class="col-md-9">
-                    <form autocomplete="off">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name">
-                                <input type="text" class="form-control" placeholder="Phone No.">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Email">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                        </div>
-                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                        <div class="text-right">
-                            <a href="#" class="btn send-btn">Send</a>
-                        </div>
-                    </form>
+                <div class="col-md-4"></div>
+                <div class="col-md-5">
+<div class="fb-page" data-href="https://www.facebook.com/havenmobile" data-tabs="messages" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/havenmobile" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/havenmobile">Haven Mobile</a></blockquote></div>
                 </div>
-            </div>
         </div>
     </div>
 
