@@ -199,9 +199,9 @@ fbq('track', 'PageView');
 
 
                     <br><br>
-                    <div class="fb-like" onClick="fbq('track', 'Like on Facebook');" data-href="https://www.facebook.com/havenmobile/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+                    <div class="fb-like" onClick="fbq('trackCustom', 'Like on Facebook'); console.log('LIKE')" data-href="https://www.facebook.com/havenmobile/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 
-                    <div onClick="fbq('trackCustom', 'Share on Facebook');" class="fb-share-button" data-href="https://www.facebook.com/havenmobile/" data-layout="box_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fhavenmobile%2F&amp;src=sdkpreparse">Share</a></div>
+                    <div onClick="fbq('trackCustom', 'Share on Facebook'); console.log('SHARE')" class="fb-share-button" data-href="https://www.facebook.com/havenmobile/" data-layout="box_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fhavenmobile%2F&amp;src=sdkpreparse">Share</a></div>
 
                     <br> <br>
                     <a href="#services" class="down-btn page-scroll">
