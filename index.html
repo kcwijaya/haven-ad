@@ -12,48 +12,43 @@
     <meta name="author" content="Jenn, ThemeForces.com">
     
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-92609430-1', 'auto');
-  ga('send', 'pageview');
+    /** GOOGLE ANALYTICS **/
 
-  !function(f,b,e,v,n,t,s)
-  {
-    if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        ga('create', 'UA-92609430-1', 'auto');
+        ga('send', 'pageview');
 
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    /** FACEBOOK PIXEL **/
+        !function(f,b,e,v,n,t,s){
+            if(f.fbq)return;n=f.fbq=function(){
+                n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+            };
+            if(!f._fbq) f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}
+            (window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1257816767629646'); 
+            fbq('track', 'PageView');
+    </script>
 
-        n.queue=[];t=b.createElement(e);t.async=!0;
+    <noscript>
 
-        t.src=v;s=b.getElementsByTagName(e)[0];
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=1257816767629646&ev=PageView&noscript=1"/>
 
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-
-            'https://connect.facebook.net/en_US/fbevents.js');
-
-        fbq('init', '1257816767629646'); 
-
-        fbq('track', 'PageView');
-
-        </script>
-
-        <noscript>
-
-            <img height="1" width="1" src="https://www.facebook.com/tr?id=1257816767629646&ev=PageView&noscript=1"/>
-
-        </noscript>
+    </noscript>
 
         <!-- End Facebook Pixel Code -->
 
-        <script
-        src="https://code.jquery.com/jquery-3.1.1.js"
-        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-        crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
 
 
     <!-- Favicons
@@ -94,64 +89,40 @@
       <![endif]-->
   </head>
   <body>
-
     <div id="fb-root"></div>
     <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '418924248440046',
+              xfbml      : true,
+              version    : 'v2.8'
+          });
+            jQuery(document).trigger('FBSDKLoaded');
+            FB.AppEvents.logPageView();
+            FB.Event.subscribe('edge.create', function(response) {
+                console.log("Liked on Facebook");
+                fbq('trackCustom', 'Like on Facebook');
+            });
+        };
 
-    window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '418924248440046',
-          xfbml      : true,
-          version    : 'v2.8'
-      });
-        jQuery(document).trigger('FBSDKLoaded');
-        FB.AppEvents.logPageView();
-
-        FB.Event.subscribe('edge.create', function(response) {
-            console.log("Liked on Facebook");
-            fbq('trackCustom', 'Like on Facebook');
-        });
-
-    };
-
-    function share() {
-      FB.ui({
-        method: 'share',
-        href: 'https://www.facebook.com/havenmobile',
-    }, function(response){
-        console.log("Share on Facebook");
-        fbq('trackCustom', 'Share on Facebook');
-    });
-  }
-
-  (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=418924248440046";
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-  (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=418924248440046";
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-  (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=418924248440046";
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-
-
-   // });
-</script>
+        function share() {
+          FB.ui({
+            method: 'share',
+            href: 'https://www.facebook.com/havenmobile',
+          }, function(response){
+            console.log("Share on Facebook");
+            fbq('trackCustom', 'Share on Facebook');
+            });
+        }
+        
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=418924248440046";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- Off Canvas Navigation
     ================================================== -->
@@ -469,7 +440,7 @@
     <nav id="footer">
         <div class="container">
          <div class="pull-left">
-            <p>2014 © Arcadia. All Rights Reserved. Coded by <a href="https://dribbble.com/jennpereira">Jenn</a> & Designed by <a href="https://dribbble.com/alanpodemski">Alan</a></p>
+            <p style="font-size: 10px">2014 © Arcadia. All Rights Reserved. Coded by <a href="https://dribbble.com/jennpereira">Jenn</a> & Designed by <a href="https://dribbble.com/alanpodemski">Alan</a> & Customized by <a href="http://www.kimberlywijaya.com"> Kimberly Wijaya </a></p>
         </div>
         <div class="pull-right"> 
             <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
